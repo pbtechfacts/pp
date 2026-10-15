@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-contrast="normal" data-text-size="md">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Terms of Service | Third Eye TTS - Text to Speech Engine</title>
+  <meta name="description" content="Terms of Service and End User License Agreement (EULA) for Third Eye TTS Android application.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0d1117">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Accessibility Bar -->
+  <div class="accessibility-bar" role="region" aria-label="Accessibility and Readability Controls">
+    <div class="container a11y-inner">
+      <div class="a11y-group speech-group">
+        <span class="a11y-label">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+          <span class="label-text">Audio Reader:</span>
+        </span>
+        <button id="tts-play-btn" class="a11y-btn" aria-label="Listen to Terms of Service audio">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          <span>Listen</span>
+        </button>
+        <button id="tts-stop-btn" class="a11y-btn" aria-label="Stop audio reader" disabled>
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12"/></svg>
+          <span>Stop</span>
+        </button>
+        <label for="tts-speed" class="sr-only">Playback Speed</label>
+        <select id="tts-speed" class="a11y-select" aria-label="Audio reader speech rate">
+          <option value="0.8">0.8x</option>
+          <option value="1.0" selected>1.0x Normal</option>
+          <option value="1.2">1.2x Fast</option>
+          <option value="1.5">1.5x Voice Over</option>
+          <option value="2.0">2.0x High Speed</option>
+        </select>
+      </div>
+
+      <div class="a11y-group display-controls">
+        <span class="a11y-label">Text:</span>
+        <button class="size-btn" data-size="sm" aria-label="Small text size">A-</button>
+        <button class="size-btn active" data-size="md" aria-label="Normal text size">A</button>
+        <button class="size-btn" data-size="lg" aria-label="Large text size">A+</button>
+        <button class="size-btn" data-size="xl" aria-label="Extra large text size">A++</button>
+
+        <button id="high-contrast-toggle" class="a11y-btn highlight" aria-pressed="false" aria-label="Toggle High Contrast Mode">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10V2z"/></svg>
+          <span id="contrast-text">High Contrast</span>
+        </button>
+
+        <button id="theme-toggle" class="a11y-btn" aria-label="Toggle light or dark theme">
+          <svg id="theme-icon-dark" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg id="theme-icon-light" class="icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <span id="theme-text">Dark</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" fill="#1e1b4b" stroke="#38bdf8" stroke-width="2"/>
+            <path d="M8 20C12 13 28 13 32 20C28 27 12 27 8 20Z" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+            <circle cx="20" cy="20" r="5" fill="#38bdf8"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Third Eye TTS</span>
+          <span class="brand-sub">Terms of Service</span>
+        </div>
+      </div>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Privacy Policy</a>
+        <a href="index.html#data-safety" class="nav-link">Data Safety</a>
+        <a href="terms.html" class="nav-link active">Terms of Service</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-outline">
+          &larr; Back to Privacy Policy
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-inner">
+      <div class="compliance-badge">
+        <span>End User License Agreement</span>
+      </div>
+      <h1 class="hero-title">Terms of Service</h1>
+      <p class="hero-subtitle">
+        Please read these terms carefully before installing or using <strong>Third Eye TTS</strong>. By using this assistive speech engine, you agree to comply with these terms.
+      </p>
+      <div class="meta-card-grid">
+        <div class="meta-item">
+          <span class="meta-label">Application:</span>
+          <strong class="meta-val">Third Eye TTS (Android)</strong>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Target Audience:</span>
+          <strong class="meta-val">Blind &amp; Visually Impaired Users</strong>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Last Updated:</span>
+          <strong class="meta-val">October 15, 2026</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Container -->
+  <div class="container main-layout">
+    <main id="main-content" class="content-body terms-body" role="main">
+      <section class="policy-section">
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By downloading, installing, or utilizing the <strong>Third Eye TTS</strong> application ("the Software"), you signify your unconditional agreement to be bound by these Terms of Service. If you do not accept these terms, do not install or use the Software.
+        </p>
+
+        <h2>2. Permitted Use &amp; Accessibility License</h2>
+        <p>
+          We grant you a personal, worldwide, revocable, non-exclusive, non-transferable, royalty-free license to use Third Eye TTS on your compatible Android devices. The software is provided primarily as an assistive service to aid blind, visually impaired, and dyslexic individuals with screen reading, text accessibility, and audio synthesis.
+        </p>
+
+        <h2>3. Prohibited Conduct</h2>
+        <p>You agree not to:</p>
+        <ul class="styled-list">
+          <li>Decompile, reverse-engineer, or attempt to extract the source code or proprietary acoustic weights except where permitted by applicable open-source licenses or mandatory local laws.</li>
+          <li>Use the software to synthesize defamatory, threatening, unlawful, or abusive audio recordings.</li>
+          <li>Redistribute or resell the application without prior written permission from the development team.</li>
+        </ul>
+
+        <h2>4. On-Device Speech &amp; User Privacy</h2>
+        <p>
+          Your synthesized speech is generated exclusively on your local device. We do not inspect, retain, or claim ownership of any text or audio documents you process using Third Eye TTS. You retain full ownership of any synthesized speech you export to your device storage. For comprehensive information on how we handle user data, please review our <a href="index.html">Privacy Policy</a>.
+        </p>
+
+        <h2>5. Disclaimer of Warranties</h2>
+        <p>
+          The software is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, and non-infringement. While we endeavor to offer continuous and reliable speech output for screen navigation, we cannot guarantee uninterrupted or error-free operation across all hardware configurations and customized Android skins.
+        </p>
+
+        <h2>6. Limitation of Liability</h2>
+        <p>
+          To the maximum extent permitted by applicable law, in no event shall the developers of Third Eye TTS be liable for any direct, indirect, incidental, special, consequential, or exemplary damages arising out of the use or inability to use the software.
+        </p>
+
+        <h2>7. Modifications to the Service and Terms</h2>
+        <p>
+          We reserve the right to modify or discontinue features in Third Eye TTS with or without notice. We may revise these terms at any time by updating this website. Continued use of the Software after changes indicates your acceptance.
+        </p>
+
+        <h2>8. Contact &amp; Support</h2>
+        <p>
+          For inquiries regarding these Terms of Service, please reach out via email to:
+          <br>
+          <a href="mailto:thirdeyettssupport@gmail.com" class="contact-link">thirdeyettssupport@gmail.com</a>
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-title">Third Eye TTS</div>
+        <p class="footer-tagline">
+          Empowering visually impaired and blind users with accessible, private, high-fidelity speech synthesis for Android.
+        </p>
+        <p class="footer-copy">&copy; 2026 Third Eye TTS Development Team. All rights reserved.</p>
+      </div>
+
+      <div class="footer-col">
+        <div class="col-title">Documentation</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="index.html#data-safety">Data Safety Disclosures</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="col-title">Accessibility</div>
+        <ul class="footer-links">
+          <li><span class="status-indicator"></span> WCAG 2.1 AA Compliant</li>
+          <li><span class="status-indicator"></span> TalkBack Screen Reader Ready</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

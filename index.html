@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-contrast="normal" data-text-size="md">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Primary Meta Tags -->
+  <title>Privacy Policy | Third Eye TTS - Text to Speech Engine for Android</title>
+  <meta name="title" content="Privacy Policy | Third Eye TTS - Text to Speech Engine for Android">
+  <meta name="description" content="Official Privacy Policy and Data Safety information for Third Eye TTS - Text to Speech Engine for blind and visually impaired users on Google Play.">
+  <meta name="keywords" content="Third Eye TTS, Privacy Policy, Text to Speech, Android TTS Engine, Accessibility, Blind, Visually Impaired, TalkBack, Google Play Data Safety">
+  <meta name="author" content="Third Eye TTS Team">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0d1117">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Privacy Policy | Third Eye TTS Engine">
+  <meta property="og:description" content="Clear, compliant, and accessible privacy policy for Third Eye TTS Android application. Designed with privacy-first on-device speech processing.">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Privacy Policy | Third Eye TTS Engine">
+  <meta property="twitter:description" content="Third Eye TTS Privacy Policy & Data Safety Disclosures for Google Play Store compliance.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PrivacyPolicy",
+    "name": "Third Eye TTS Privacy Policy",
+    "headline": "Privacy Policy for Third Eye TTS Android Application",
+    "description": "Comprehensive privacy disclosure, permissions explanation, and data safety compliance for Third Eye TTS.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Third Eye TTS Development Team",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "thirdeyettssupport@gmail.com",
+        "contactType": "Customer Support"
+      }
+    },
+    "datePublished": "2024-01-01",
+    "dateModified": "2026-10-15",
+    "applicableCountry": "Global"
+  }
+  </script>
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Accessibility Bar -->
+  <div class="accessibility-bar" role="region" aria-label="Accessibility and Readability Controls">
+    <div class="container a11y-inner">
+      <div class="a11y-group speech-group">
+        <span class="a11y-label">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+          <span class="label-text">Audio Reader:</span>
+        </span>
+        <button id="tts-play-btn" class="a11y-btn" aria-label="Listen to Privacy Policy audio">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          <span>Listen</span>
+        </button>
+        <button id="tts-stop-btn" class="a11y-btn" aria-label="Stop audio reader" disabled>
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12"/></svg>
+          <span>Stop</span>
+        </button>
+        <label for="tts-speed" class="sr-only">Playback Speed</label>
+        <select id="tts-speed" class="a11y-select" aria-label="Audio reader speech rate">
+          <option value="0.8">0.8x</option>
+          <option value="1.0" selected>1.0x Normal</option>
+          <option value="1.2">1.2x Fast</option>
+          <option value="1.5">1.5x Voice Over</option>
+          <option value="2.0">2.0x High Speed</option>
+        </select>
+      </div>
+
+      <div class="a11y-group display-controls">
+        <!-- Text Size -->
+        <span class="a11y-label">Text:</span>
+        <button class="size-btn" data-size="sm" aria-label="Small text size">A-</button>
+        <button class="size-btn active" data-size="md" aria-label="Normal text size">A</button>
+        <button class="size-btn" data-size="lg" aria-label="Large text size">A+</button>
+        <button class="size-btn" data-size="xl" aria-label="Extra large text size">A++</button>
+
+        <!-- High Contrast Mode (Special for low vision users) -->
+        <button id="high-contrast-toggle" class="a11y-btn highlight" aria-pressed="false" aria-label="Toggle High Contrast Mode for low vision accessibility">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10V2z"/></svg>
+          <span id="contrast-text">High Contrast</span>
+        </button>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="a11y-btn" aria-label="Toggle light or dark theme">
+          <svg id="theme-icon-dark" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg id="theme-icon-light" class="icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <span id="theme-text">Dark</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" fill="url(#brand-grad)" stroke="#38bdf8" stroke-width="2"/>
+            <path d="M8 20C12 13 28 13 32 20C28 27 12 27 8 20Z" fill="#0f172a" stroke="#38bdf8" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="20" cy="20" r="5" fill="#38bdf8"/>
+            <circle cx="21" cy="19" r="1.8" fill="#ffffff"/>
+            <!-- Soundwaves for TTS -->
+            <path d="M28 16C29.5 17.2 30.5 18.5 30.5 20C30.5 21.5 29.5 22.8 28 24" stroke="#818cf8" stroke-width="1.8" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="brand-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#1e1b4b"/>
+                <stop offset="1" stop-color="#0f172a"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Third Eye TTS</span>
+          <span class="brand-sub">Text to Speech Engine • Android</span>
+        </div>
+      </div>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#summary" class="nav-link">Summary</a>
+        <a href="#data-safety" class="nav-link badge-link">
+          <span>Data Safety</span>
+          <span class="nav-pill">Play Store</span>
+        </a>
+        <a href="#permissions" class="nav-link">Permissions</a>
+        <a href="#retention" class="nav-link">Data Deletion</a>
+        <a href="terms.html" class="nav-link">Terms</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="print-btn" class="btn btn-outline" aria-label="Print or save as PDF">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+          <span class="action-text">Print / PDF</span>
+        </button>
+        <a href="#contact" class="btn btn-primary">
+          <span>Support</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero-section" aria-labelledby="hero-title">
+    <div class="container hero-inner">
+      <div class="compliance-badge" role="status">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span>Google Play Developer Policy Compliant (2026/2027)</span>
+      </div>
+
+      <h1 id="hero-title" class="hero-title">
+        Privacy Policy &amp; Data Safety Disclosures
+      </h1>
+
+      <p class="hero-subtitle">
+        Third Eye TTS is an assistive Text-to-Speech (TTS) engine engineered primarily for <strong>blind and visually impaired individuals</strong>. Your privacy and dignity are paramount: <strong>we do not collect, track, sell, or transmit your spoken texts or personal data</strong>. Everything processes directly on your device.
+      </p>
+
+      <div class="meta-card-grid">
+        <div class="meta-item">
+          <span class="meta-label">Application:</span>
+          <strong class="meta-val">Third Eye TTS (Android)</strong>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Category:</span>
+          <strong class="meta-val">Accessibility / TTS Engine</strong>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Processing Model:</span>
+          <strong class="meta-val text-accent">100% On-Device Synthesizer</strong>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Effective Date:</span>
+          <strong class="meta-val">October 15, 2026</strong>
+        </div>
+      </div>
+
+      <!-- Quick Action Jump Buttons -->
+      <div class="hero-cta-group">
+        <a href="#data-safety" class="btn btn-primary btn-lg">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="11" r="3"/></svg>
+          <span>Google Play Data Safety Section</span>
+        </a>
+        <a href="#summary" class="btn btn-secondary btn-lg">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <span>Quick 2-Minute Summary</span>
+        </a>
+        <button id="modal-delete-trigger" class="btn btn-outline btn-lg" aria-haspopup="dialog">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+          <span>Request Data Deletion</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Policy Search Bar -->
+  <div class="search-section" role="search" aria-label="Search Privacy Policy">
+    <div class="container">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="policy-search" placeholder="Search keywords: e.g., 'storage', 'audio', 'talkback', 'deletion', 'children', 'microphone'..." aria-label="Search within privacy policy">
+        <button id="clear-search" class="clear-btn hidden" aria-label="Clear search query">&times;</button>
+      </div>
+      <div id="search-result-count" class="search-count" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <!-- Content Layout -->
+  <div class="container main-layout">
+    
+    <!-- Table of Contents Sidebar -->
+    <aside class="sidebar-toc" role="complementary" aria-label="Table of Contents">
+      <div class="toc-sticky-card">
+        <h2 class="toc-heading">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          <span>Navigation</span>
+        </h2>
+        <nav class="toc-nav" id="toc-nav" aria-label="Policy Sections">
+          <a href="#summary" class="toc-link active">1. At-A-Glance Summary</a>
+          <a href="#accessibility-commitment" class="toc-link">2. Accessibility &amp; Blind Users</a>
+          <a href="#data-safety" class="toc-link highlight-link">3. Google Play Data Safety</a>
+          <a href="#data-collection" class="toc-link">4. What Data We Process</a>
+          <a href="#data-not-collected" class="toc-link">5. What We NEVER Collect</a>
+          <a href="#permissions" class="toc-link">6. Android Permissions</a>
+          <a href="#on-device-architecture" class="toc-link">7. On-Device TTS Engine</a>
+          <a href="#third-parties" class="toc-link">8. Third-Party Services</a>
+          <a href="#retention" class="toc-link">9. Retention &amp; Deletion</a>
+          <a href="#children" class="toc-link">10. Children's Privacy (COPPA)</a>
+          <a href="#security" class="toc-link">11. Security Measures</a>
+          <a href="#legal-rights" class="toc-link">12. Rights (GDPR &amp; CCPA)</a>
+          <a href="#changes" class="toc-link">13. Policy Updates</a>
+          <a href="#contact" class="toc-link">14. Developer Contact</a>
+        </nav>
+
+        <div class="toc-callout">
+          <p class="callout-title">Have a Question?</p>
+          <p class="callout-desc">We respond promptly to accessibility inquiries and privacy requests.</p>
+          <a href="mailto:thirdeyettssupport@gmail.com" class="callout-email">thirdeyettssupport@gmail.com</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main id="main-content" class="content-body" role="main">
+
+      <!-- SECTION 1: Summary -->
+      <section id="summary" class="policy-section">
+        <div class="section-tag">Overview</div>
+        <h2>1. At-A-Glance Privacy Summary</h2>
+        <p class="lead-text">
+          We built <strong>Third Eye TTS</strong> with an uncompromising <em>privacy-by-design</em> approach. Here is the concise summary for users, testers, and Google Play Review teams:
+        </p>
+
+        <div class="grid-cards-3">
+          <div class="highlight-card success-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>100% On-Device Processing</h3>
+            <p>Every word and sentence you convert to speech is processed locally on your device CPU/DSP. Your text never leaves your phone.</p>
+          </div>
+
+          <div class="highlight-card warning-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            </div>
+            <h3>Zero Personal Data Sale</h3>
+            <p>We do not collect names, emails, phone numbers, contacts, locations, or sensitive telemetry. We do not sell or monetize personal data.</p>
+          </div>
+
+          <div class="highlight-card info-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+            <h3>Assistive Accessibility</h3>
+            <p>Fully integrated with Android TalkBack, screen readers, and accessibility services to empower blind and low-vision users.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: Accessibility & Blind Users Commitment -->
+      <section id="accessibility-commitment" class="policy-section">
+        <div class="section-tag">Accessibility</div>
+        <h2>2. Our Dedicated Commitment to Blind &amp; Visually Impaired Users</h2>
+        <p>
+          Third Eye TTS was conceived to serve as a vital assistive gateway for blind, visually impaired, dyslexic, and low-vision users worldwide. As an assistive tool, we uphold the highest ethical standards:
+        </p>
+        <ul class="styled-list">
+          <li><strong>TalkBack Integration:</strong> The app registers as an Android system `TextToSpeechService`. When you navigate your phone using TalkBack, Third Eye TTS reads UI elements, messages, and labels purely in memory.</li>
+          <li><strong>Zero Eavesdropping:</strong> We do not log what is spoken. Whether reading banking information, personal messages, medical records, or passwords, the engine does not cache, record, or transmit that content.</li>
+          <li><strong>Keyboard &amp; Audio Navigation:</strong> Both this website and the Android application comply with <strong>WCAG 2.1 Level AA</strong> accessibility standards, supporting screen readers, braille displays, and large text scales.</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 3: Google Play Data Safety Compliance -->
+      <section id="data-safety" class="policy-section highlight-box">
+        <div class="section-tag play-tag">Google Play Console Requirement</div>
+        <h2>3. Google Play Data Safety Information</h2>
+        <p class="lead-text">
+          Google Play requires all developers to complete a Data Safety form. The table below represents an exact mirror of our Google Play Developer Console declaration for <strong>Third Eye TTS</strong>:
+        </p>
+
+        <div class="table-responsive">
+          <table class="data-table" aria-label="Google Play Data Safety Breakdown">
+            <thead>
+              <tr>
+                <th scope="col">Data Category</th>
+                <th scope="col">Data Type</th>
+                <th scope="col">Collected?</th>
+                <th scope="col">Shared with 3rd Parties?</th>
+                <th scope="col">Processing Method</th>
+                <th scope="col">Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>User Content</strong></td>
+                <td>User Text (Sent for Synthesis)</td>
+                <td><span class="badge badge-no">NO</span></td>
+                <td><span class="badge badge-no">NO</span></td>
+                <td>Ephemeral on-device processing only (memory buffer)</td>
+                <td>App Functionality (Text-to-Speech playback)</td>
+              </tr>
+              <tr>
+                <td><strong>Audio Files</strong></td>
+                <td>Synthesized Voice Recordings</td>
+                <td><span class="badge badge-no">NO</span></td>
+                <td><span class="badge badge-no">NO</span></td>
+                <td>Direct audio track output / Optional local file save by user</td>
+                <td>Audio Output</td>
+              </tr>
+              <tr>
+                <td><strong>Personal Info</strong></td>
+                <td>Name, Email, Address, Phone, ID</td>
+                <td><span class="badge badge-no">NO</span></td>
+                <td><span class="badge badge-no">NO</span></td>
+                <td>Not requested or accessible by the application</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <td><strong>Financial Info</strong></td>
+                <td>Credit Card, Payment Details</td>
+                <td><span class="badge badge-no">NO</span></td>
+                <td><span class="badge badge-no">NO</span></td>
+                <td>Handled exclusively by Google Play In-App Billing (if applicable)</td>
+                <td>Google Play Transactions</td>
+              </tr>
+              <tr>
+                <td><strong>Location</strong></td>
+                <td>Precise or Coarse Location</td>
+                <td><span class="badge badge-no">NO</span></td>
+                <td><span class="badge badge-no">NO</span></td>
+                <td>No location APIs requested or accessed</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <td><strong>Photos &amp; Videos</strong></td>
+                <td>Images, Camera feed, Videos</td>
+                <td><span class="badge badge-no">NO</span></td>
+                <td><span class="badge badge-no">NO</span></td>
+                <td>No camera or photo gallery permissions requested</td>
+                <td>None</td>
+              </tr>
+              <tr>
+                <td><strong>App Info &amp; Performance</strong></td>
+                <td>Crash logs &amp; Diagnostics</td>
+                <td><span class="badge badge-yes">Optional</span></td>
+                <td><span class="badge badge-no">NO (Only Google)</span></td>
+                <td>Aggregated, anonymized stack traces via Google Play Console</td>
+                <td>App stability &amp; bug fixes</td>
+              </tr>
+              <tr>
+                <td><strong>Device Identifiers</strong></td>
+                <td>IMEI, MAC, Android ID, Advertising ID</td>
+                <td><span class="badge badge-no">NO</span></td>
+                <td><span class="badge badge-no">NO</span></td>
+                <td>We do not access or track hardware identifiers</td>
+                <td>None</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="security-highlights">
+          <div class="sec-item">
+            <svg class="sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg>
+            <div>
+              <strong>Data Encrypted in Transit:</strong> Any optional network traffic (such as downloading offline language packages) utilizes modern Transport Layer Security (TLS 1.3 / HTTPS).
+            </div>
+          </div>
+          <div class="sec-item">
+            <svg class="sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+            <div>
+              <strong>Data Deletion Mechanism:</strong> Since we do not maintain remote cloud user accounts or databases, users can clear all local app preferences instantly in Android Settings.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: Data Processed -->
+      <section id="data-collection" class="policy-section">
+        <div class="section-tag">Processing</div>
+        <h2>4. Information We Process and How We Use It</h2>
+        <p>
+          Third Eye TTS operates strictly as an Android speech engine. To perform this role, the app processes minimal technical parameters:
+        </p>
+
+        <div class="accordion-item">
+          <h3 class="accordion-title">
+            <span class="tag-badge">Audio Synthesis</span>
+            <span>Text Submitted for Speech Synthesis</span>
+          </h3>
+          <p>
+            When an app (such as TalkBack, an e-book reader, or the Third Eye TTS test interface) requests text to be read aloud, that text string is fed directly to the local acoustic speech model. The generated PCM audio buffer is streamed into Android's `AudioTrack`. As soon as audio finishes playing, the temporary memory buffer is discarded.
+          </p>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-title">
+            <span class="tag-badge">Configuration</span>
+            <span>App Preferences &amp; Voice Settings</span>
+          </h3>
+          <p>
+            Settings such as speech rate, pitch, language selection, volume boost, and voice profile are saved solely in the application's private `SharedPreferences` on your local device. These settings are never synchronized with an external server.
+          </p>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-title">
+            <span class="tag-badge">Diagnostics</span>
+            <span>Crash Reports and Performance Metrics</span>
+          </h3>
+          <p>
+            If the application crashes, Android's built-in Google Play services may submit an anonymized stack trace to the Google Play Developer Console. This report contains no personal identifiers or spoken text; it contains only code execution lines, device brand/model, and OS version to enable rapid bug fixing.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 5: Data We NEVER Collect -->
+      <section id="data-not-collected" class="policy-section">
+        <div class="section-tag">Guarantees</div>
+        <h2>5. Information We Do NOT Collect</h2>
+        <p>To eliminate any ambiguity for users and compliance inspectors, Third Eye TTS <strong>does not</strong>:</p>
+        <div class="bullet-grid">
+          <div class="bullet-box">
+            <svg class="bullet-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            <div>
+              <strong>No Audio Surveillance / Microphone Tapping:</strong> We do not record environmental audio or user voice.
+            </div>
+          </div>
+          <div class="bullet-box">
+            <svg class="bullet-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            <div>
+              <strong>No Text Logging:</strong> We do not keep historical logs of words, sentences, or books read by the engine.
+            </div>
+          </div>
+          <div class="bullet-box">
+            <svg class="bullet-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            <div>
+              <strong>No Account Creation Required:</strong> No signup, passwords, or personal credentials are required.
+            </div>
+          </div>
+          <div class="bullet-box">
+            <svg class="bullet-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            <div>
+              <strong>No Targeted Ad Tracking:</strong> We do not integrate ad networks or track your activities across apps.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: Android Permissions -->
+      <section id="permissions" class="policy-section">
+        <div class="section-tag">Android System</div>
+        <h2>6. Android Permissions &amp; Technical Justifications</h2>
+        <p>
+          Google Play Developer Policies require transparent justification for every declared permission in the application manifest. Below is the comprehensive rationale:
+        </p>
+
+        <div class="permissions-card-list">
+          <div class="perm-card">
+            <div class="perm-header">
+              <span class="perm-name">android.permission.INTERNET</span>
+              <span class="perm-status optional">Network Access (Optional)</span>
+            </div>
+            <p class="perm-desc">
+              <strong>Purpose:</strong> Utilized exclusively if the user requests downloading additional high-definition voice language models or voice updates from our verified CDN/repository, and for Google Play license verification. It is <em>never</em> used to transmit user text or speech output.
+            </p>
+          </div>
+
+          <div class="perm-card">
+            <div class="perm-header">
+              <span class="perm-name">android.permission.FOREGROUND_SERVICE</span>
+              <span class="perm-status essential">Core Service</span>
+            </div>
+            <p class="perm-desc">
+              <strong>Purpose:</strong> Required by Android when synthesizing lengthy articles, books, or screen reader queues in the background without being killed by the Android battery optimization manager. Ensures seamless audio continuity for blind users.
+            </p>
+          </div>
+
+          <div class="perm-card">
+            <div class="perm-header">
+              <span class="perm-name">android.intent.action.TTS_SERVICE</span>
+              <span class="perm-status essential">System Engine</span>
+            </div>
+            <p class="perm-desc">
+              <strong>Purpose:</strong> Standard Android Intent Filter that allows Third Eye TTS to register as a recognized system Text-to-Speech engine in <em>Android Settings &gt; Accessibility &gt; Text-to-speech output</em>.
+            </p>
+          </div>
+
+          <div class="perm-card">
+            <div class="perm-header">
+              <span class="perm-name">Scoped Storage / READ_MEDIA_AUDIO</span>
+              <span class="perm-status user-invoked">User Triggered</span>
+            </div>
+            <p class="perm-desc">
+              <strong>Purpose:</strong> Only activated if the user explicitly utilizes the optional "Export Speech to Audio File (WAV/MP3)" utility to save a spoken document directly into their device's Music or Downloads folder.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7: On-Device TTS Architecture -->
+      <section id="on-device-architecture" class="policy-section">
+        <div class="section-tag">Architecture</div>
+        <h2>7. On-Device Speech Processing Architecture</h2>
+        <p>
+          Unlike cloud-based TTS solutions that transmit your sensitive on-screen text to remote cloud servers for synthesis, Third Eye TTS operates using local on-device neural acoustic models:
+        </p>
+
+        <div class="pipeline-card">
+          <div class="pipeline-step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <strong>App or TalkBack Request</strong>
+              <span>User encounters text or an accessibility label.</span>
+            </div>
+          </div>
+          <div class="pipeline-arrow">&rarr;</div>
+          <div class="pipeline-step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <strong>Local Memory Buffer</strong>
+              <span>Text parsed into phonemes in device RAM.</span>
+            </div>
+          </div>
+          <div class="pipeline-arrow">&rarr;</div>
+          <div class="pipeline-step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <strong>Acoustic Model Synthesis</strong>
+              <span>Native C++/Java synthesizer computes waveform.</span>
+            </div>
+          </div>
+          <div class="pipeline-arrow">&rarr;</div>
+          <div class="pipeline-step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <strong>Speaker Output &amp; Wipe</strong>
+              <span>Audio streams to speaker; RAM buffer instantly cleared.</span>
+            </div>
+          </div>
+        </div>
+        <p class="footnote">
+          * Result: Complete zero-knowledge architecture. No third party, including the app developers, can ever intercept or read the synthesized content.
+        </p>
+      </section>
+
+      <!-- SECTION 8: Third-Party Services -->
+      <section id="third-parties" class="policy-section">
+        <div class="section-tag">Partners</div>
+        <h2>8. Third-Party Services and SDKs</h2>
+        <p>
+          We deliberately avoid commercial advertising or tracking SDKs. The only third-party systems the app may interact with are official Google Android infrastructure components:
+        </p>
+        <ul class="styled-list">
+          <li>
+            <strong>Google Play Services:</strong> Used for app distribution, automated APK updates, and standard Android platform stability diagnostics.
+            <br>
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="external-link">
+              Google Privacy Policy &rarr;
+            </a>
+          </li>
+          <li>
+            <strong>Google Play In-App Billing (If enabled):</strong> If premium voices or donations are offered, all payment processing is handled exclusively through Google Play's PCI-DSS compliant secure infrastructure. We do not see or store credit card details.
+            <br>
+            <a href="https://play.google.com/about/monetization-ads/" target="_blank" rel="noopener noreferrer" class="external-link">
+              Google Play Payments Policy &rarr;
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- SECTION 9: Retention and Deletion -->
+      <section id="retention" class="policy-section">
+        <div class="section-tag">Data Rights</div>
+        <h2>9. Data Retention and Deletion Policy</h2>
+        <p>
+          Under the <strong>Google Play User Data Policy</strong>, users have the right to request deletion of any personal data.
+        </p>
+        <div class="retention-info-card">
+          <h3>How to Delete Your Data:</h3>
+          <p>
+            Because Third Eye TTS does <strong>not</strong> collect personal accounts, email addresses, or store files on remote servers, your data is 100% localized to your Android device. You can purge all application state at any time in under 10 seconds:
+          </p>
+          <ol class="step-list">
+            <li>Open your Android device <strong>Settings</strong>.</li>
+            <li>Select <strong>Apps &amp; notifications</strong> (or <strong>Installed Apps</strong>).</li>
+            <li>Find and tap <strong>Third Eye TTS</strong>.</li>
+            <li>Tap <strong>Storage &amp; cache</strong>.</li>
+            <li>Tap <strong>Clear Storage</strong> (or <strong>Clear Data</strong>) and <strong>Clear Cache</strong>.</li>
+          </ol>
+          <p>
+            This action permanently erases all saved voice settings, local custom pronunciation rules, and cached offline voice models.
+          </p>
+          <div class="deletion-btn-wrap">
+            <button class="btn btn-outline" id="open-email-modal">
+              Need assistance or specific record deletion inquiry? Contact Us
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 10: Children's Privacy -->
+      <section id="children" class="policy-section">
+        <div class="section-tag">COPPA</div>
+        <h2>10. Children's Privacy (COPPA Compliance)</h2>
+        <p>
+          Third Eye TTS is a general accessibility utility suitable for individuals of all ages, including children requiring screen-reading assistance for education and literacy.
+        </p>
+        <p>
+          In accordance with the <strong>Children's Online Privacy Protection Act (COPPA)</strong> and global child safety frameworks, we do not knowingly collect, request, or retain any personal identifiable information from children under the age of 13 (or under 16 in the European Union).
+        </p>
+        <p>
+          If a parent or guardian discovers that a child has provided us with personal contact information, please contact us immediately at <a href="mailto:thirdeyettssupport@gmail.com">thirdeyettssupport@gmail.com</a>, and we will purge that correspondence immediately.
+        </p>
+      </section>
+
+      <!-- SECTION 11: Security Measures -->
+      <section id="security" class="policy-section">
+        <div class="section-tag">Security</div>
+        <h2>11. Security Measures &amp; Technical Safeguards</h2>
+        <p>
+          We employ strict security standards to ensure the safety of our application:
+        </p>
+        <ul class="styled-list">
+          <li><strong>Sandboxed Application Storage:</strong> All voice configurations and application caches are isolated within Android's private app sandbox (`/data/data/com...`), inaccessible to unauthorized third-party apps.</li>
+          <li><strong>Transport Layer Security (TLS):</strong> Any voice pack updates are validated against SHA-256 cryptographic hashes and downloaded via HTTPS (TLS 1.3).</li>
+          <li><strong>Zero Root Privilege Requirements:</strong> The app never requests elevated or root privileges and operates entirely within Android's strict permission model.</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 12: Legal Rights -->
+      <section id="legal-rights" class="policy-section">
+        <div class="section-tag">Legal Frameworks</div>
+        <h2>12. Rights Under GDPR, CCPA / CPRA &amp; CalOPPA</h2>
+        <p>
+          Whether you reside in the European Union, the United Kingdom, California, or anywhere in the world, you possess legal privacy rights:
+        </p>
+        <div class="grid-cards-2">
+          <div class="legal-card">
+            <h3>European Union &amp; UK (GDPR)</h3>
+            <p>
+              Under Articles 15-22 of the GDPR, you have the right to access, rectify, or erase personal data, restrict processing, and data portability. Because we do not harvest personal data, our processing is limited to legitimate user-initiated execution on your device.
+            </p>
+          </div>
+          <div class="legal-card">
+            <h3>California (CCPA / CPRA)</h3>
+            <p>
+              We do not sell or share consumer personal information for cross-context behavioral advertising. We do not discriminate against users who exercise their privacy rights.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 13: Policy Changes -->
+      <section id="changes" class="policy-section">
+        <div class="section-tag">Updates</div>
+        <h2>13. Changes to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy periodically to reflect enhancements in Third Eye TTS or adjustments in Google Play Developer Program Policies. When updates occur, we will update the "Last Modified" date at the top of this document. Continued use of the application constitutes acceptance of the modified policy.
+        </p>
+      </section>
+
+      <!-- SECTION 14: Developer Contact -->
+      <section id="contact" class="policy-section highlight-contact">
+        <div class="section-tag contact-tag">Direct Support</div>
+        <h2>14. Developer Contact Information</h2>
+        <p class="lead-text">
+          If you have questions, feedback, accessibility suggestions, or data queries, please contact our lead developer team directly:
+        </p>
+
+        <div class="contact-card">
+          <div class="contact-details">
+            <div class="contact-row">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <div>
+                <span class="contact-title">Official Developer Email:</span>
+                <a href="mailto:thirdeyettssupport@gmail.com" class="contact-link">thirdeyettssupport@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </span>
+              <div>
+                <span class="contact-title">Application:</span>
+                <span class="contact-text">Third Eye TTS (Text to Speech Engine)</span>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+              </span>
+              <div>
+                <span class="contact-title">Response Timeframe:</span>
+                <span class="contact-text">Inquiries answered within 24 to 48 business hours</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-action-box">
+            <a href="mailto:thirdeyettssupport@gmail.com?subject=Third%20Eye%20TTS%20Privacy%20Inquiry" class="btn btn-primary btn-block">
+              Send Email Inquiry
+            </a>
+            <a href="terms.html" class="btn btn-outline btn-block">
+              Read Terms of Service
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Data Deletion Request Modal -->
+  <div id="deletion-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modal-title">Request Data Deletion</h3>
+        <button id="modal-close-btn" class="modal-close" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Because <strong>Third Eye TTS</strong> operates without remote user accounts, all your application data is stored exclusively on your device.
+        </p>
+        <div class="modal-alert">
+          <strong>Instant Deletion:</strong> You do not need to wait for us. You can clear all data instantly via <em>Android Settings &gt; Apps &gt; Third Eye TTS &gt; Storage &gt; Clear Storage</em>.
+        </div>
+        <p>
+          If you have previously contacted us via email and want your support emails deleted from our inbox, you may submit a formal request below:
+        </p>
+        <form id="deletion-form" onsubmit="event.preventDefault(); window.location.href='mailto:thirdeyettssupport@gmail.com?subject=Third%20Eye%20TTS%20Data%20Deletion%20Request&body=Please%20delete%20any%20support%20records%20associated%20with%20my%20email.';">
+          <label for="user-email-input" class="form-label">Your Email Address (Optional):</label>
+          <input type="email" id="user-email-input" class="form-input" placeholder="name@example.com">
+          <div class="modal-actions">
+            <button type="submit" class="btn btn-primary">Generate Deletion Email</button>
+            <button type="button" id="modal-cancel-btn" class="btn btn-outline">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-title">Third Eye TTS</div>
+        <p class="footer-tagline">
+          Empowering visually impaired and blind users with accessible, private, high-fidelity speech synthesis for Android.
+        </p>
+        <p class="footer-copy">&copy; 2026 Third Eye TTS Development Team. All rights reserved.</p>
+      </div>
+
+      <div class="footer-col">
+        <div class="col-title">Documentation</div>
+        <ul class="footer-links">
+          <li><a href="#summary">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="#data-safety">Google Play Data Safety</a></li>
+          <li><a href="#permissions">Android Permissions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="col-title">Accessibility &amp; Standards</div>
+        <ul class="footer-links">
+          <li><span class="status-indicator"></span> WCAG 2.1 AA Compliant</li>
+          <li><span class="status-indicator"></span> TalkBack Screen Reader Ready</li>
+          <li><span class="status-indicator"></span> Google Play Certified Disclosures</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
